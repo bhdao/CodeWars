@@ -12,3 +12,8 @@ function descendingOrder(n) {
   numArray = numArray.join('');
   return +numArray;
 }
+
+//Convert a String to a Number
+const stringToNumber = function(str){
+  return +str;
+}
