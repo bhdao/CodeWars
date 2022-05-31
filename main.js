@@ -121,3 +121,16 @@ function howMuchILoveYou(nbPetals) {
 
   return phrases[pointer];
 }
+
+//Categorize New Member
+function openOrSenior(data){
+  return data.map((e) => {
+    let output = "";
+    if(e[0] >= 55 && e[1] > 7) {
+      output = "Senior";
+    } else {
+      output = "Open";
+    };
+    return output;
+  })
+}
