@@ -134,3 +134,13 @@ function openOrSenior(data){
     return output;
   })
 }
+
+// Grasshopper - Summation
+var summation = function (num) {
+  let output = 0;
+  while (num > 0) {
+    output += num;
+    num -= 1;
+  }
+  return output;
+}

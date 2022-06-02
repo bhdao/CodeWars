@@ -9,3 +9,4 @@ Current Solutions:
 - Roman Numerals Encoder
 - I love you, a little , a lot, passionately ... not at all
 - Categorize New Member
+- Grasshopper - Summation
