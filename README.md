@@ -10,3 +10,4 @@ Current Solutions:
 - I love you, a little , a lot, passionately ... not at all
 - Categorize New Member
 - Grasshopper - Summation
+- Sum of two lowest positive integers
