@@ -150,3 +150,12 @@ function sumTwoSmallestNumbers(numbers) {
   numbers.sort((a,b)=>a-b);
   return numbers[0]+numbers[1];
 }
+
+//Even or Odd
+function even_or_odd(number) {
+  if (number%2!=0) {
+    return "Odd"
+  }  else {
+    return "Even"
+  }
+}

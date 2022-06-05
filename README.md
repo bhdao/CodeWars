@@ -11,3 +11,4 @@ Current Solutions:
 - Categorize New Member
 - Grasshopper - Summation
 - Sum of two lowest positive integers
+- Even or Odd
