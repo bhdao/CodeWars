@@ -12,3 +12,4 @@ Current Solutions:
 - Grasshopper - Summation
 - Sum of two lowest positive integers
 - Even or Odd
+- Pete, the baker

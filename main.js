@@ -123,10 +123,10 @@ function howMuchILoveYou(nbPetals) {
 }
 
 //Categorize New Member
-function openOrSenior(data){
+function openOrSenior(data) {
   return data.map((e) => {
     let output = "";
-    if(e[0] >= 55 && e[1] > 7) {
+    if (e[0] >= 55 && e[1] > 7) {
       output = "Senior";
     } else {
       output = "Open";
@@ -146,16 +146,35 @@ var summation = function (num) {
 }
 
 //Sum of two lowest positive integers
-function sumTwoSmallestNumbers(numbers) {  
-  numbers.sort((a,b)=>a-b);
-  return numbers[0]+numbers[1];
+function sumTwoSmallestNumbers(numbers) {
+  numbers.sort((a, b) => a - b);
+  return numbers[0] + numbers[1];
 }
 
 //Even or Odd
 function even_or_odd(number) {
-  if (number%2!=0) {
+  if (number % 2 != 0) {
     return "Odd"
-  }  else {
+  } else {
     return "Even"
   }
+}
+
+//Pete, the baker
+function cakes(recipe, available) {
+  let possible = 0;
+  let recipeIngs = Object.keys(recipe);
+
+  while (2 + 2 == 4) {
+    for (let ing of recipeIngs) {
+      if (!available.hasOwnProperty(ing)) {
+        return possible;
+      }
+      available[ing] -= recipe[ing];
+      if (available[ing] < 0) {
+        return possible;
+      }
+    }
+    possible += 1;
+  };
 }
