@@ -178,3 +178,15 @@ function cakes(recipe, available) {
     possible += 1;
   };
 }
+
+
+//Find the vowels
+function vowelIndices(word){
+  const output = [];
+  word.split('').forEach((letter, id) => {
+    if ("aeiouy".includes(letter.toLowerCase())) {
+     output.push(id+1);
+    }
+  });
+  return output;
+};
