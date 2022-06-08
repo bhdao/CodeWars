@@ -190,3 +190,8 @@ function vowelIndices(word){
   });
   return output;
 };
+
+//Disemvowel Trolls
+function disemvowel(str) {
+  return str.split("").filter(e=>!"aeiou".includes(e.toLowerCase())).join('');
+}

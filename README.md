@@ -14,3 +14,4 @@ Current Solutions:
 - Even or Odd
 - Pete, the baker
 - Find the vowels
+- Disemvowel Trolls
