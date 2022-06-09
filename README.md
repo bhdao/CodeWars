@@ -15,3 +15,4 @@ Current Solutions:
 - Pete, the baker
 - Find the vowels
 - Disemvowel Trolls
+- Are You Playing Banjo?
