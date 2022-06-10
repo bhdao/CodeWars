@@ -16,3 +16,4 @@ Current Solutions:
 - Find the vowels
 - Disemvowel Trolls
 - Are You Playing Banjo?
+- Is this a triangle?
