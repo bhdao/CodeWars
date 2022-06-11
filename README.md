@@ -17,3 +17,4 @@ Current Solutions:
 - Disemvowel Trolls
 - Are You Playing Banjo?
 - Is this a triangle?
+- Sum of positive

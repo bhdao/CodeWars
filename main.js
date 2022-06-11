@@ -181,11 +181,11 @@ function cakes(recipe, available) {
 
 
 //Find the vowels
-function vowelIndices(word){
+function vowelIndices(word) {
   const output = [];
   word.split('').forEach((letter, id) => {
     if ("aeiouy".includes(letter.toLowerCase())) {
-     output.push(id+1);
+      output.push(id + 1);
     }
   });
   return output;
@@ -193,7 +193,7 @@ function vowelIndices(word){
 
 //Disemvowel Trolls
 function disemvowel(str) {
-  return str.split("").filter(e=>!"aeiou".includes(e.toLowerCase())).join('');
+  return str.split("").filter(e => !"aeiou".includes(e.toLowerCase())).join('');
 }
 
 //Are You Playing Banjo?
@@ -206,13 +206,22 @@ function areYouPlayingBanjo(name) {
 }
 
 //Is this a triangle?
-function isTriangle(a,b,c)
-{
-   if (a == 0 || b == 0 || c == 0) {
-     return false;
-   } else if (a + b > c && b + c > a && c + a > b) {
-     return true;
-   } else {
-     return false;
-   }
+function isTriangle(a, b, c) {
+  if (a == 0 || b == 0 || c == 0) {
+    return false;
+  } else if (a + b > c && b + c > a && c + a > b) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+//Sum of positive
+function positiveSum(arr) {
+  return arr.reduce(function (acc, val) {
+    if (val > 0) {
+      acc += val
+    }
+    return acc;
+  }, 0)
 }
