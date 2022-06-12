@@ -225,3 +225,21 @@ function positiveSum(arr) {
     return acc;
   }, 0)
 }
+
+//The Robber Language
+function robberEncode(sentence) {
+  let letters = sentence.split("");
+  let newString =  letters.reduce(function (acc, letter) {
+    if ("BCDFGHJKLMNPQRSTVWXYZ".includes(letter.toUpperCase()) ){
+      let addVowel;
+      if (letter == letter.toUpperCase()){
+        addVowel = "O"
+      } else {
+        addVowel = "o"
+      }
+      return acc += `${letter}${addVowel}${letter}`;
+    }
+    return acc += letter;
+  }, "");
+  return newString;
+}
