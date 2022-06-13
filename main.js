@@ -229,10 +229,10 @@ function positiveSum(arr) {
 //The Robber Language
 function robberEncode(sentence) {
   let letters = sentence.split("");
-  let newString =  letters.reduce(function (acc, letter) {
-    if ("BCDFGHJKLMNPQRSTVWXYZ".includes(letter.toUpperCase()) ){
+  let newString = letters.reduce(function (acc, letter) {
+    if ("BCDFGHJKLMNPQRSTVWXYZ".includes(letter.toUpperCase())) {
       let addVowel;
-      if (letter == letter.toUpperCase()){
+      if (letter == letter.toUpperCase()) {
         addVowel = "O"
       } else {
         addVowel = "o"
@@ -242,4 +242,21 @@ function robberEncode(sentence) {
     return acc += letter;
   }, "");
   return newString;
+}
+
+//Reverse words
+function reverseWords(str) {
+  let wordsArr = str.split(" ");
+  let newString = "";
+  while (wordsArr.length > 0) {
+    wordsArr.shift().split().forEach((x) => {
+      x.split("").reverse().forEach((y) => { newString += y; })
+    })
+    if (wordsArr.length > 0) {
+      newString += " ";
+    };
+  };
+  console.log(newString);
+  return newString;
+
 }
