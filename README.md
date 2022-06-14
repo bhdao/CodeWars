@@ -20,3 +20,4 @@ Current Solutions:
 - Sum of positive
 - The Robber Language
 - Reverse words
+- Powers of 2

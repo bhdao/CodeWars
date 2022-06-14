@@ -260,3 +260,12 @@ function reverseWords(str) {
   return newString;
 
 }
+
+//Powers of 2
+function powersOfTwo(n){
+  const output = [];
+  for (let i = 0; i <= n; i++){
+    output.push(2**i)
+  }
+  return output;
+}
