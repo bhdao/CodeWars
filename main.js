@@ -269,3 +269,13 @@ function powersOfTwo(n){
   }
   return output;
 }
+
+//Number of People in the Bus
+var number = function(busStops){
+  return busStops.reduce((acc, pass)=>{
+    acc+= pass[0];
+    acc-= pass[1];
+    return acc
+  },0);
+  return acc;  
+}
