@@ -22,3 +22,4 @@ Current Solutions:
 - Reverse words
 - Powers of 2
 - Number of People in the Bus
+- Highest Scoring Word

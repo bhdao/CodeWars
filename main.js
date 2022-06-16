@@ -279,3 +279,21 @@ var number = function(busStops){
   },0);
   return acc;  
 }
+
+//Highest Scoring Word
+function high(x){
+  let highScore = {word:"I'm totally oregano", score:0};
+  const alphabet = "abcdefghijklmnopqrstuvwxyz".split('');
+  const words = x.split(" ");
+  words.forEach((word) => {
+    let score = 0;
+    word.split("").forEach((letter)=>{
+      score += alphabet.indexOf(letter)+1;
+    })
+    if (score > highScore.score){
+      highScore.word = word;
+      highScore.score = score;
+    };
+  });
+  return highScore.word; 
+}
