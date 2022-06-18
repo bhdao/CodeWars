@@ -304,3 +304,20 @@ class SmallestIntegerFinder {
     return args.sort((a,b) => a-b)[0];
   }
 }
+
+//Replace With Alphabet Position
+function alphabetPosition(text) {
+  const alphabet = "abcdefghijklmnopqrstuvwxyz".split('');
+  let output = "";
+  text.split('').forEach((letter)=>{
+    const numPosition = alphabet.indexOf(letter.toLowerCase())+1;
+    const numString = numPosition.toString();
+    if (output.length <= 0 && numString != "0") {
+      output += numString;
+    } else if (numString !="0") (
+      output += ` ${numString}`
+    );
+  });
+  
+  return output;
+}
