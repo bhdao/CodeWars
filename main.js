@@ -321,3 +321,21 @@ function alphabetPosition(text) {
   
   return output;
 }
+
+//Find the odd int
+function findOdd(A) {
+  const oddInt = {num: "x", count: "y"};
+  const sortedNums = A.sort();
+  sortedNums.forEach((int)=>{
+    if(oddInt.num != int) {
+      if(oddInt.count % 2 == 1){
+        return oddInt.num
+      }
+      oddInt.num = int;
+      oddInt.count = 1;
+    } else if (oddInt.num == int) {
+      oddInt.count += 1;
+    }
+  });
+  return oddInt.num;
+}

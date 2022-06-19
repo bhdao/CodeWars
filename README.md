@@ -25,3 +25,4 @@ Current Solutions:
 - Highest Scoring Word
 - Find the smallest integer in the array
 - Replace With Alphabet Position
+- Find the odd int
