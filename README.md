@@ -26,3 +26,4 @@ Current Solutions:
 - Find the smallest integer in the array
 - Replace With Alphabet Position
 - Find the odd int
+- Complementary DNA

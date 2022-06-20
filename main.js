@@ -339,3 +339,21 @@ function findOdd(A) {
   });
   return oddInt.num;
 }
+
+//Complementary DNA
+function DNAStrand(dna){
+  let output = "";
+  dna.split('').forEach((seq)=>{
+      if (seq == "A") {
+        output += "T";
+      } else if (seq == "T"){
+        output += "A";
+      } else if ( seq == "G") {
+        output += "C";
+      } else if ( seq == "C") {
+        output += "G"
+      };
+    }
+  );
+  return output;
+}
