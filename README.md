@@ -24,3 +24,4 @@ Current Solutions:
 - Number of People in the Bus
 - Highest Scoring Word
 - Find the smallest integer in the array
+- Calculate average

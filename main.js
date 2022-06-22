@@ -304,3 +304,15 @@ class SmallestIntegerFinder {
     return args.sort((a,b) => a-b)[0];
   }
 }
+
+//Calculate average
+function find_average(array) {
+  if (array.length > 0){
+    let sum = array.reduce((acc,val)=>{
+     return acc + val; 
+    });
+    return sum/array.length;
+  } else {
+    return 0;
+  }
+}
