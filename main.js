@@ -262,46 +262,46 @@ function reverseWords(str) {
 }
 
 //Powers of 2
-function powersOfTwo(n){
+function powersOfTwo(n) {
   const output = [];
-  for (let i = 0; i <= n; i++){
-    output.push(2**i)
+  for (let i = 0; i <= n; i++) {
+    output.push(2 ** i)
   }
   return output;
 }
 
 //Number of People in the Bus
-var number = function(busStops){
-  return busStops.reduce((acc, pass)=>{
-    acc+= pass[0];
-    acc-= pass[1];
+var number = function (busStops) {
+  return busStops.reduce((acc, pass) => {
+    acc += pass[0];
+    acc -= pass[1];
     return acc
-  },0);
-  return acc;  
+  }, 0);
+  return acc;
 }
 
 //Highest Scoring Word
-function high(x){
-  let highScore = {word:"I'm totally oregano", score:0};
+function high(x) {
+  let highScore = { word: "I'm totally oregano", score: 0 };
   const alphabet = "abcdefghijklmnopqrstuvwxyz".split('');
   const words = x.split(" ");
   words.forEach((word) => {
     let score = 0;
-    word.split("").forEach((letter)=>{
-      score += alphabet.indexOf(letter)+1;
+    word.split("").forEach((letter) => {
+      score += alphabet.indexOf(letter) + 1;
     })
-    if (score > highScore.score){
+    if (score > highScore.score) {
       highScore.word = word;
       highScore.score = score;
     };
   });
-  return highScore.word; 
+  return highScore.word;
 }
 
 //Find the smallest integer in the array
 class SmallestIntegerFinder {
   findSmallestInt(args) {
-    return args.sort((a,b) => a-b)[0];
+    return args.sort((a, b) => a - b)[0];
   }
 }
 
@@ -309,26 +309,26 @@ class SmallestIntegerFinder {
 function alphabetPosition(text) {
   const alphabet = "abcdefghijklmnopqrstuvwxyz".split('');
   let output = "";
-  text.split('').forEach((letter)=>{
-    const numPosition = alphabet.indexOf(letter.toLowerCase())+1;
+  text.split('').forEach((letter) => {
+    const numPosition = alphabet.indexOf(letter.toLowerCase()) + 1;
     const numString = numPosition.toString();
     if (output.length <= 0 && numString != "0") {
       output += numString;
-    } else if (numString !="0") (
+    } else if (numString != "0") (
       output += ` ${numString}`
     );
   });
-  
+
   return output;
 }
 
 //Find the odd int
 function findOdd(A) {
-  const oddInt = {num: "x", count: "y"};
+  const oddInt = { num: "x", count: "y" };
   const sortedNums = A.sort();
-  sortedNums.forEach((int)=>{
-    if(oddInt.num != int) {
-      if(oddInt.count % 2 == 1){
+  sortedNums.forEach((int) => {
+    if (oddInt.num != int) {
+      if (oddInt.count % 2 == 1) {
         return oddInt.num
       }
       oddInt.num = int;
@@ -341,29 +341,40 @@ function findOdd(A) {
 }
 
 //Complementary DNA
-function DNAStrand(dna){
+function DNAStrand(dna) {
   let output = "";
-  dna.split('').forEach((seq)=>{
-      if (seq == "A") {
-        output += "T";
-      } else if (seq == "T"){
-        output += "A";
-      } else if ( seq == "G") {
-        output += "C";
-      } else if ( seq == "C") {
-        output += "G"
-      };
-    }
+  dna.split('').forEach((seq) => {
+    if (seq == "A") {
+      output += "T";
+    } else if (seq == "T") {
+      output += "A";
+    } else if (seq == "G") {
+      output += "C";
+    } else if (seq == "C") {
+      output += "G"
+    };
+  }
   );
   return output;
 }
 
 //Grasshopper - Personalized Message
-function greet (name, owner) {
-  if (name == owner){
+function greet(name, owner) {
+  if (name == owner) {
     return "Hello boss";
   } else {
     return "Hello guest"
   }
 }
 
+//Calculate average
+function find_average(array) {
+  if (array.length > 0) {
+    let sum = array.reduce((acc, val) => {
+      return acc + val;
+    });
+    return sum / array.length;
+  } else {
+    return 0;
+  }
+}
