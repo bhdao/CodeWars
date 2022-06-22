@@ -305,14 +305,65 @@ class SmallestIntegerFinder {
   }
 }
 
-//Calculate average
-function find_average(array) {
-  if (array.length > 0){
-    let sum = array.reduce((acc,val)=>{
-     return acc + val; 
-    });
-    return sum/array.length;
+//Replace With Alphabet Position
+function alphabetPosition(text) {
+  const alphabet = "abcdefghijklmnopqrstuvwxyz".split('');
+  let output = "";
+  text.split('').forEach((letter)=>{
+    const numPosition = alphabet.indexOf(letter.toLowerCase())+1;
+    const numString = numPosition.toString();
+    if (output.length <= 0 && numString != "0") {
+      output += numString;
+    } else if (numString !="0") (
+      output += ` ${numString}`
+    );
+  });
+  
+  return output;
+}
+
+//Find the odd int
+function findOdd(A) {
+  const oddInt = {num: "x", count: "y"};
+  const sortedNums = A.sort();
+  sortedNums.forEach((int)=>{
+    if(oddInt.num != int) {
+      if(oddInt.count % 2 == 1){
+        return oddInt.num
+      }
+      oddInt.num = int;
+      oddInt.count = 1;
+    } else if (oddInt.num == int) {
+      oddInt.count += 1;
+    }
+  });
+  return oddInt.num;
+}
+
+//Complementary DNA
+function DNAStrand(dna){
+  let output = "";
+  dna.split('').forEach((seq)=>{
+      if (seq == "A") {
+        output += "T";
+      } else if (seq == "T"){
+        output += "A";
+      } else if ( seq == "G") {
+        output += "C";
+      } else if ( seq == "C") {
+        output += "G"
+      };
+    }
+  );
+  return output;
+}
+
+//Grasshopper - Personalized Message
+function greet (name, owner) {
+  if (name == owner){
+    return "Hello boss";
   } else {
-    return 0;
+    return "Hello guest"
   }
 }
+

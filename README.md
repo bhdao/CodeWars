@@ -24,4 +24,8 @@ Current Solutions:
 - Number of People in the Bus
 - Highest Scoring Word
 - Find the smallest integer in the array
+- Replace With Alphabet Position
+- Find the odd int
+- Complementary DNA
+- Grasshopper - Personalized Message
 - Calculate average
