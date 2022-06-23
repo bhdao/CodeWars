@@ -30,3 +30,4 @@ Current Solutions:
 - Complementary DNA
 - Grasshopper - Personalized Message
 - Calculate average
+- Beeramid

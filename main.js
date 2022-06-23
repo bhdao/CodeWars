@@ -378,3 +378,30 @@ function find_average(array) {
     return 0;
   }
 }
+
+//Beeramid
+var beeramid = function (bonus, price) {
+  const possibleBeers = bonus / price;
+  if (possibleBeers <= 0) { return 0; }
+
+  const max = { level: 0, beers: 0 };
+  const calcBeerPerLevel = (levels) => {
+    let totalBeers = 0;
+    for (let i = 0; i <= levels; i++) {
+      totalBeers += i ** 2;
+    }
+    return totalBeers;
+  }
+
+  while (max.beers < possibleBeers) {
+    max.level += 1;
+    max.beers = calcBeerPerLevel(max.level);
+  }
+
+  if (max.beers == possibleBeers) {
+    return max.level;
+  } else {
+    return max.level - 1;
+  }
+
+}
