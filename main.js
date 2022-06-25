@@ -407,16 +407,21 @@ var beeramid = function (bonus, price) {
 }
 
 //Your order, please
-function order(words){
+function order(words) {
   const splitWords = words.split(' ');
   let outputArr = [];
-  splitWords.forEach((x,idx)=>{
+  splitWords.forEach((x, idx) => {
     for (let word of splitWords) {
-      let idxPlus1 = idx+1;
-      if (word.includes(idxPlus1.toString())){
+      let idxPlus1 = idx + 1;
+      if (word.includes(idxPlus1.toString())) {
         outputArr.push(word);
       }
     }
   });
   return outputArr.join(' ')
+}
+
+//Remove exclamation marks
+function removeExclamationMarks(s) {
+  return s.split('').filter((letter) => letter !== "!").join('');
 }

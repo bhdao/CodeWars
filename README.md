@@ -32,3 +32,4 @@ Current Solutions:
 - Calculate average
 - Beeramid
 - Your order, please
+- Remove exclamation marks
