@@ -33,3 +33,4 @@ Current Solutions:
 - Beeramid
 - Your order, please
 - Remove exclamation marks
+- Abbreviate a Two Word Name

@@ -425,3 +425,9 @@ function order(words) {
 function removeExclamationMarks(s) {
   return s.split('').filter((letter) => letter !== "!").join('');
 }
+
+//Abbreviate a Two Word Name
+function abbrevName(name) {
+  //This is cursed but I think it's *pretty funny*
+  return `${name.split(' ')[0][0].toUpperCase()}.${name.split(' ')[1][0].toUpperCase()}`
+}
