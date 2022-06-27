@@ -431,3 +431,14 @@ function abbrevName(name) {
   //This is cursed but I think it's *pretty funny*
   return `${name.split(' ')[0][0].toUpperCase()}.${name.split(' ')[1][0].toUpperCase()}`
 }
+
+//The Feast of Many Beasts
+function feast(beast, dish) {
+  if (beast[0] != dish[0]) {
+    return false;
+  }
+  if (beast[beast.length - 1] != dish[dish.length - 1]) {
+    return false;
+  }
+  return true;
+}

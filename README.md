@@ -34,3 +34,4 @@ Current Solutions:
 - Your order, please
 - Remove exclamation marks
 - Abbreviate a Two Word Name
+- The Feast of Many Beasts
