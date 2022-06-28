@@ -35,3 +35,4 @@ Current Solutions:
 - Remove exclamation marks
 - Abbreviate a Two Word Name
 - The Feast of Many Beasts
+- Beginner Series #4 Cockroach

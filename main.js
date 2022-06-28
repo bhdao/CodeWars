@@ -442,3 +442,8 @@ function feast(beast, dish) {
   }
   return true;
 }
+
+//Beginner Series #4 Cockroach
+function cockroachSpeed(s) {
+  return Math.floor(s*10000/360);
+}
