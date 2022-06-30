@@ -458,3 +458,17 @@ function rentalCarCost(d) {
     return d*40;
   }
 }
+
+//Find the first non-consecutive number
+function firstNonConsecutive (arr) {
+  if (arr.length < 2){return null};
+  let currNum = arr[0];
+  for (let i = 1; i < arr.length; i++){
+    if (!(currNum+1 == arr[i])){
+      return arr[i];
+    } else {
+      currNum = arr[i];
+    }
+  }
+  return null;
+}
