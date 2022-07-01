@@ -445,30 +445,43 @@ function feast(beast, dish) {
 
 //Beginner Series #4 Cockroach
 function cockroachSpeed(s) {
-  return Math.floor(s*10000/360);
+  return Math.floor(s * 10000 / 360);
 }
 
 //Transportation on vacation
 function rentalCarCost(d) {
   if (d >= 7) {
-    return (d*40) - 50;
-  } else if (d >= 3 && d < 7){
-    return (d*40) - 20;
+    return (d * 40) - 50;
+  } else if (d >= 3 && d < 7) {
+    return (d * 40) - 20;
   } else {
-    return d*40;
+    return d * 40;
   }
 }
 
 //Find the first non-consecutive number
-function firstNonConsecutive (arr) {
-  if (arr.length < 2){return null};
+function firstNonConsecutive(arr) {
+  if (arr.length < 2) { return null };
   let currNum = arr[0];
-  for (let i = 1; i < arr.length; i++){
-    if (!(currNum+1 == arr[i])){
+  for (let i = 1; i < arr.length; i++) {
+    if (!(currNum + 1 == arr[i])) {
       return arr[i];
     } else {
       currNum = arr[i];
     }
   }
   return null;
+}
+
+//Unique In Order
+var uniqueInOrder = function (iterable) {
+  const output = [];
+  let last;
+  [...iterable].forEach((val) => {
+    if (last !== val) {
+      output.push(val);
+      last = val;
+    }
+  });
+  return output;
 }

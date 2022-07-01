@@ -38,3 +38,4 @@ Current Solutions:
 - Beginner Series #4 Cockroach
 - Transportation on vacation
 - Find the first non-consecutive number
+- Unique In Order
