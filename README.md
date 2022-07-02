@@ -39,3 +39,4 @@ Current Solutions:
 - Transportation on vacation
 - Find the first non-consecutive number
 - Unique In Order
+- Lost Without a Map
