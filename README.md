@@ -40,3 +40,4 @@ Current Solutions:
 - Find the first non-consecutive number
 - Unique In Order
 - Lost Without a Map
+- Find the unique number
