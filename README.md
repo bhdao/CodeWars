@@ -42,3 +42,4 @@ Current Solutions:
 - Lost Without a Map
 - Find the unique number
 - A Needle in the Haystack
+- Rock Paper Scissors!
