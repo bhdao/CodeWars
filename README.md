@@ -43,3 +43,4 @@ Current Solutions:
 - Find the unique number
 - A Needle in the Haystack
 - Rock Paper Scissors!
+- Grasshopper - Grade book

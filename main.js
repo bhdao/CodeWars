@@ -511,9 +511,25 @@ const rps = (p1, p2) => {
   if (p1 == p2) {
     return 'Draw!';
   }
-  else if ((p1 == 'scissors' && p2 == 'paper') || (p1 == 'paper' && p2 == 'rock') || (p1 == 'rock' && p2 == 'scissors') ) {
+  else if ((p1 == 'scissors' && p2 == 'paper') || (p1 == 'paper' && p2 == 'rock') || (p1 == 'rock' && p2 == 'scissors')) {
     return 'Player 1 won!'
   } else {
     return 'Player 2 won!'
   }
 };
+
+//Grasshopper - Grade book
+function getGrade(s1, s2, s3) {
+  let grade = (s1 + s2 + s3) / 3;
+  if (grade >= 90 && grade <= 100) {
+    return 'A';
+  } else if (grade >= 80 && grade < 90) {
+    return 'B'
+  } else if (grade >= 70 && grade < 80) {
+    return 'C'
+  } else if (grade >= 60 && grade < 70) {
+    return 'D'
+  } else {
+    return 'F'
+  }
+}
