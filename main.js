@@ -533,3 +533,11 @@ function getGrade(s1, s2, s3) {
     return 'F'
   }
 }
+
+//Remove First and Last Character
+function removeChar(str) {
+  let splitString = str.split('');
+  splitString.pop();
+  splitString.shift();
+  return splitString.join('');
+};

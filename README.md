@@ -44,3 +44,4 @@ Current Solutions:
 - A Needle in the Haystack
 - Rock Paper Scissors!
 - Grasshopper - Grade book
+- Remove First and Last Character
