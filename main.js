@@ -544,7 +544,7 @@ function removeChar(str) {
 
 //Calculate BMI
 function bmi(weight, height) {
-  let bmi = weight/(height**2);
+  let bmi = weight / (height ** 2);
   if (bmi > 30) {
     return 'Obese'
   } else if (bmi <= 30 && bmi > 25) {
@@ -554,4 +554,17 @@ function bmi(weight, height) {
   } else if (bmi <= 18.5) {
     return 'Underweight';
   };
+};
+
+//Basic Mathematical Operations
+function basicOp(operation, value1, value2) {
+  if (operation == '+') {
+    return value1 + value2;
+  } else if (operation == '-') {
+    return value1 - value2;
+  } else if (operation == '*') {
+    return value1 * value2;
+  } else if (operation == '/') {
+    return value1 / value2
+  }
 };

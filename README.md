@@ -46,3 +46,4 @@ Current Solutions:
 - Grasshopper - Grade book
 - Remove First and Last Character
 - Calculate BMI
+- Basic Mathematical Operations
