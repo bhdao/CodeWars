@@ -47,3 +47,4 @@ Current Solutions:
 - Remove First and Last Character
 - Calculate BMI
 - Basic Mathematical Operations
+- Correct the mistakes of the character recognition software

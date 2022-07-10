@@ -568,3 +568,24 @@ function basicOp(operation, value1, value2) {
     return value1 / value2
   }
 };
+
+//Correct the mistakes of the character recognition software
+function correct(string) {
+  let split = string.split('');
+  return split.reduce((acc, next) => {
+    let can = next;
+    switch (can) {
+      case '5':
+        return acc + "S";
+        break;
+      case '0':
+        return acc + "O";
+        break;
+      case '1':
+        return acc + "I";
+        break;
+      default:
+        return acc + next;
+    }
+  }, '')
+}
