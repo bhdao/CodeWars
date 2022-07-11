@@ -48,3 +48,4 @@ Current Solutions:
 - Calculate BMI
 - Basic Mathematical Operations
 - Correct the mistakes of the character recognition software
+- Switch it Up!
