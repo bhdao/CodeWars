@@ -625,3 +625,10 @@ function switchItUp(number) {
       break
   }
 }
+
+//Beginner - Reduce but Grow
+function grow(x) {
+  return x.reduce((num, acc) => {
+    return num * acc
+  });
+}

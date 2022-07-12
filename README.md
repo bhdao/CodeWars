@@ -49,3 +49,4 @@ Current Solutions:
 - Basic Mathematical Operations
 - Correct the mistakes of the character recognition software
 - Switch it Up!
+- Beginner - Reduce but Grow
