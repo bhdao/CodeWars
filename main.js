@@ -632,3 +632,18 @@ function grow(x) {
     return num * acc
   });
 }
+
+//Thinkful - Logic Drills: Traffic light
+function updateLight(current) {
+  switch (current) {
+    case 'green':
+      return 'yellow'
+      break;
+    case 'yellow':
+      return 'red'
+      break;
+    case 'red':
+      return 'green'
+      break;
+  }
+}

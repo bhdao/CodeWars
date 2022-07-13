@@ -50,3 +50,4 @@ Current Solutions:
 - Correct the mistakes of the character recognition software
 - Switch it Up!
 - Beginner - Reduce but Grow
+- Thinkful - Logic Drills: Traffic light
