@@ -51,3 +51,4 @@ Current Solutions:
 - Switch it Up!
 - Beginner - Reduce but Grow
 - Thinkful - Logic Drills: Traffic light
+- Quarter of the year
