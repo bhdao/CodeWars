@@ -660,3 +660,8 @@ const quarterOf = (month) => {
     return 4;
   }
 }
+
+//Parse nice int from char problem
+function getAge(inputString) {
+  return +inputString[0];
+}

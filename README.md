@@ -52,3 +52,4 @@ Current Solutions:
 - Beginner - Reduce but Grow
 - Thinkful - Logic Drills: Traffic light
 - Quarter of the year
+- Parse nice int from char problem
