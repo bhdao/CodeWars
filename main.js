@@ -665,3 +665,8 @@ const quarterOf = (month) => {
 function getAge(inputString) {
   return +inputString[0];
 }
+
+//Keep Hydrated!
+function litres(time) {
+  return Math.floor(time*0.5);
+}
