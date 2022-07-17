@@ -54,3 +54,4 @@ Current Solutions:
 - Quarter of the year
 - Parse nice int from char problem
 - Keep Hydrated!
+- Directions Reduction

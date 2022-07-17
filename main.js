@@ -668,5 +668,35 @@ function getAge(inputString) {
 
 //Keep Hydrated!
 function litres(time) {
-  return Math.floor(time*0.5);
+  return Math.floor(time * 0.5);
+}
+
+//Directions Reduction
+function dirReduc(arr) {
+  const input = [...arr];
+  const output = [];
+  const rule = { 'WEST': 'EAST', 'EAST': 'WEST', 'NORTH': 'SOUTH', 'SOUTH': 'NORTH' }
+
+  //init output
+  output.push(input.shift());
+
+  //Compare latest output with next input
+  function compare2(lastOutput, nextInput) {
+    if (rule[nextInput] != lastOutput) {
+      //If last output and next input don't cancel each other out, add next input to directions
+      output.push(nextInput);
+    } else {
+      //But if they do, then remove last output
+      output.pop();
+    }
+    //And then remove the next input regardless, since we've either added it or cancelled it out already
+    input.shift();
+  }
+
+  //Keep running the comparison function until all inputs have been put in
+  while (input.length > 0) {
+    compare2(output[output.length - 1], input[0])
+  }
+
+  return output;
 }
