@@ -55,3 +55,4 @@ Current Solutions:
 - Parse nice int from char problem
 - Keep Hydrated!
 - Directions Reduction
+- Convert a Boolean to a String

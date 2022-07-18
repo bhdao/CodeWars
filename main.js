@@ -700,3 +700,8 @@ function dirReduc(arr) {
 
   return output;
 }
+
+//Convert a Boolean to a String
+function booleanToString(b) {
+  return b.toString();
+}
