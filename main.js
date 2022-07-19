@@ -705,3 +705,10 @@ function dirReduc(arr) {
 function booleanToString(b) {
   return b.toString();
 }
+
+//Double Char
+function doubleChar(str) {
+  return str.split('').reduce((acc, char) => {
+    return acc + char + char;
+  }, "");
+}

@@ -56,3 +56,4 @@ Current Solutions:
 - Keep Hydrated!
 - Directions Reduction
 - Convert a Boolean to a String
+- Double Char
