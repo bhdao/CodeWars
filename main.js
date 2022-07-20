@@ -712,3 +712,8 @@ function doubleChar(str) {
     return acc + char + char;
   }, "");
 }
+
+//Grasshopper - Messi goals function
+function goals(a, b, c) {
+  return a + b + c;
+}

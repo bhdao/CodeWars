@@ -57,3 +57,4 @@ Current Solutions:
 - Directions Reduction
 - Convert a Boolean to a String
 - Double Char
+- Grasshopper - Messi goals function
