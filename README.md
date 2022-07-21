@@ -58,3 +58,4 @@ Current Solutions:
 - Convert a Boolean to a String
 - Double Char
 - Grasshopper - Messi goals function
+- Find Maximum and Minimum Values of a List
