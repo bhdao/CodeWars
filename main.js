@@ -727,3 +727,14 @@ var max = function (list) {
   list.sort((a, b) => b - a)
   return list[0];
 }
+
+//Century From Year
+function century(year) {
+  const cent = year / 100;
+  const round = Math.round(cent);
+  if (round < cent) {
+    return round + 1;
+  } else {
+    return round;
+  }
+}

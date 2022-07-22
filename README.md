@@ -59,3 +59,4 @@ Current Solutions:
 - Double Char
 - Grasshopper - Messi goals function
 - Find Maximum and Minimum Values of a List
+- Century From Year
