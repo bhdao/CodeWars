@@ -60,3 +60,4 @@ Current Solutions:
 - Grasshopper - Messi goals function
 - Find Maximum and Minimum Values of a List
 - Century From Year
+- altERnaTIng cAsE <=> ALTerNAtiNG CaSe

@@ -738,3 +738,17 @@ function century(year) {
     return round;
   }
 }
+
+//altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+String.prototype.toAlternatingCase = function (e) {
+  let inputString = this;
+  return [...(inputString.split(''))].reduce((acc, letter) => {
+    if (letter != "" || letter != " ") {
+      if (letter == letter.toLowerCase()) {
+        return acc + letter.toUpperCase();
+      } else {
+        return acc + letter.toLowerCase();
+      }
+    }
+  }, "")
+}
